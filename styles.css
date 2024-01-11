@@ -1,0 +1,904 @@
+
+/* Importing Google Fonts for 'Urbanist' and 'Anonymous Pro' */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap');
+
+/* Resetting default styles for the body */
+body {
+    font-family: 'Anonymous Pro', monospace;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header */
+header {
+    text-align: center;
+    background-color: white;
+    height: 40px;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Styling for the image container */
+.image-container img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-bottom: 2px solid black;
+}
+
+/* Styling for the image text */
+.image-text {
+    position: absolute;
+    top: 30%;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 52px;
+    width: 45%;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
+
+/* Styling for the logo container */
+.logo-container {
+    float: left;
+}
+
+/* Styling for the logo image */
+.logo-image {
+    width: 40px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Styling for the cart button container */
+.cart-button-container {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the cart button */
+.cart-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styling for the cart button image */
+.cart-button img {
+    width: 30px;
+    height: auto;
+}
+
+/* Styling for the navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+/* Styling for the navigation menu items */
+nav ul li a {
+    font-family: 'Urbanist', sans-serif;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Styling for the product container */
+/* Styling for the product container */
+.product {
+    align-items: center; /* Aligns the child elements to the center */
+    width: 300px; /* Sets the width of the product container */
+    overflow: visible; /* Ensures content is not clipped and can be rendered outside the product container */
+    margin-left: 20px; /* Adds a left margin to the product container */
+}
+
+/* Styling for the product image */
+.product img {
+    width: auto; /* Sets the width of the image to scale proportionally to the height */
+    height: 300px; /* Sets the height of the image */
+}
+
+/* Styling for the product description */
+.product p {
+    margin: 10px 0; /* Adds a top and bottom margin to the product description */
+    font-size: 18px; /* Sets the font size of the product description */
+}
+
+/* Styling for the product grid container */
+.product-grid {
+    display: grid; /* Sets the display type to grid */
+    grid-template-columns: repeat(3, 1fr); /* Creates a three-column grid layout where each column takes up an equal fraction of the available space */
+    grid-gap: 20px; /* Sets the gap between grid cells */
+    margin-left: 30px; /* Adds a left margin to the product grid container */
+}
+
+/* Styling for the product section heading */
+.products-section h2 {
+    font-size: 42px; /* Sets the font size of the heading */
+    margin-left: 50px; /* Adds a left margin to the heading */
+    font-family: 'Urbanist', sans-serif; /* Sets the font family of the heading */
+}
+
+/* Styling for the add-to-cart button */
+.add-to-cart {
+    background-color: black; /* Sets the background color of the button */
+    border: none; /* Removes the border from the button */
+    color: white; /* Sets the text color of the button */
+    padding: 15px 32px; /* Adds padding to the button */
+    text-align: center; /* Centers the text within the button */
+}
+/* Styling for the about section */
+#about {
+    width: 100%; /* Sets the width of the about section to 100% of the parent container */
+}
+
+/* Styling for the heading in the about section */
+#about h2 {
+    font-size: 42px; /* Sets the font size of the heading */
+    font-family: 'Urbanist', sans-serif; /* Sets the font family of the heading */
+    margin-left: 50px; /* Adds a left margin to the heading */
+}
+
+/* Styling for the paragraph in the about section */
+#about p {
+    font-size: 1em; /* Sets the font size of the paragraph to 1em (relative to the parent element's font size) */
+    line-height: 1.6; /* Sets the line height (the space between lines of text) to 1.6 */
+    font-family: 'Urbanist', sans-serif; /* Sets the font family of the paragraph */
+    margin: 0; /* Removes the default margin from the paragraph */
+    margin-left: 50px; /* Adds a left margin to the paragraph */
+}
+
+/* Styling for the title in the newsletter section */
+.newsletter__title {
+    font-size: 42px; /* Sets the font size of the title */
+    color: hsl(0, 0%, 15%); /* Sets the color of the title using the HSL color model */
+    margin-bottom: var(--mb-1-5); /* Sets the bottom margin of the title to the value of the --mb-1-5 CSS variable */
+    font-family: 'Urbanist', sans-serif; /* Sets the font family of the title */
+}
+/* Styling for the description in the newsletter section */
+.newsletter__description {
+    color: hsl(0, 0%, 35%); /* Sets the color of the description using the HSL color model */
+}
+
+/* Styling for the subscribe section in the newsletter */
+.newsletter__subscribe {
+    display: flex; /* Sets the display type to flex */
+    flex-direction: column; /* Sets the direction of the flex items to column */
+    row-gap: .75rem; /* Sets the gap between rows in the flex container */
+}
+
+/* Styling for the input field in the newsletter section */
+.newsletter__input {
+    border: none; /* Removes the border from the input field */
+    outline: none; /* Removes the outline from the input field */
+    background-color: hsl(0, 0%, 94%); /* Sets the background color of the input field using the HSL color model */
+}
+
+/* Styling for the newsletter section */
+.newsletter {
+    width: 100%; /* Sets the width of the newsletter section to 100% of the parent container */
+}
+
+/* Styling for the background of the newsletter section */
+.newsletter__bg {
+    display: flex; /* Sets the display type to flex */
+    justify-content: space-between; /* Distributes the flex items evenly along the horizontal line */
+    align-items: center; /* Aligns the flex items along the vertical line */
+}
+
+/* Styling for the title in the newsletter section */
+.newsletter__title {
+    font-size: 42px; /* Sets the font size of the title */
+    margin-bottom: 30px; /* Sets the bottom margin of the title */
+    margin-left: 50px; /* Sets the left margin of the title */
+}
+
+/* Styling for the description in the newsletter section */
+.newsletter__description {
+    margin-bottom: 20px; /* Sets the bottom margin of the description */
+    margin-left: 50px; /* Sets the left margin of the description */
+    width: 70%; /* Sets the width of the description to 70% of the parent container */
+    font-family: 'Urbanist', sans-serif; /* Sets the font family of the description */
+}
+
+/* Styling for the subscribe section in the newsletter */
+.newsletter__subscribe {
+    display: flex; /* Sets the display type to flex */
+}
+
+/* Styling for the input field in the newsletter section */
+.newsletter__input {
+    flex-grow: 1; /* Allows the input field to take up the remaining space in the flex container */
+    margin-right: 10px; /* Sets the right margin of the input field */
+    width: 500px; /* Sets the width of the input field */
+    margin-right: 20px; /* Sets the right margin of the input field */
+}
+
+/* Styling for the button */
+.button {
+    background-color: #4c65af; /* Sets the background color of the button */
+    color: #f9f9f9; /* Sets the text color of the button */
+    padding: 10px 20px; /* Sets the padding of the button */
+    border: none; /* Removes the border from the button */
+}
+
+/* Styling for the button hover state */
+/* Styling for the button hover state */
+.button:hover {
+    background-color: #4c65af; /* Changes the background color of the button when hovered over */
+}
+
+/* Media query for screens with a maximum width of 320px */
+@media screen and (max-width: 320px) {
+    /* Styling for the header */
+    header {
+        width: 1080px; /* Sets the width of the header */
+    }
+
+    /* Styling for the logo container */
+    .logo-container{
+        width: 100px; /* Sets the width of the logo container */
+        height: auto; /* Sets the height of the logo container to auto */
+        padding-bottom: 10px; /* Adds padding to the bottom of the logo container */
+    }
+
+    /* Styling for the logo image */
+    .logo-image {
+        width: 50px; /* Sets the width of the logo image */
+        height: auto; /* Sets the height of the logo image to auto */
+    }
+
+    /* Styling for the image in the image container */
+    .image-container img {
+        width: 1100px; /* Sets the width of the image */
+        height: auto; /* Sets the height of the image to auto */
+    }
+
+    /* Styling for the text in the image container */
+    .image-text {
+        width: 200%; /* Sets the width of the text to 200% of the parent container */
+        margin-left: 50px; /* Adds a left margin to the text */
+        margin-top: 200px; /* Adds a top margin to the text */
+    }
+
+    /* Styling for the product grid */
+    .product-grid {
+        display: grid; /* Sets the display type to grid */
+        grid-template-columns: repeat(1, 1fr); /* Sets the grid to have one column that takes up the full width of the grid container */
+        grid-gap: 300px; /* Sets the gap between grid items */
+        margin-left:200px; /* Adds a left margin to the grid */
+    }
+
+    /* Styling for the image in the product */
+    .product img {
+        width: auto; /* Sets the width of the image to auto */
+        height: 500px; /* Sets the height of the image */
+    }
+
+    /* Styling for the about section */
+    #about {
+        width: 1090px; /* Sets the width of the about section */
+    }
+
+    /* Styling for the heading in the products section */
+    .products-section h2 {
+        font-size: 80px; /* Sets the font size of the heading */
+        margin-left: 50px; /* Adds a left margin to the heading */
+        font-family: 'Urbanist', sans-serif; /* Sets the font family of the heading */
+    }
+
+    /* Styling for the heading in the about section */
+    #about h2 {
+        font-size: 80px; /* Sets the font size of the heading */
+    }
+
+    /* Styling for the paragraph in the about section */
+    #about p {
+        font-size: 48px; /* Sets the font size of the paragraph */
+    }
+
+    /* Styling for the background of the newsletter section */
+    .newsletter__bg {
+        flex-direction: column; /* Sets the direction of the flex items to column */
+    }
+
+    /* Styling for the subscribe section in the newsletter */
+    .newsletter__subscribe {
+        flex-direction: column; /* Sets the direction of the flex items to column */
+        align-items: stretch; /* Stretches the flex items to fill the container */
+    }
+
+    /* Styling for the input field in the newsletter section */
+    .newsletter__input {
+        margin-right: 0; /* Removes the right margin from the input field */
+        width: 100%; /* Sets the width of the input field to 100% of the parent container */
+    }
+
+    /* Styling for the button */
+    .button {
+        width: 100%; /* Sets the width of the button to 100% of the parent container */
+        margin-top: 20px; /* Adds a top margin to the button */
+    }
+
+    /* Styling for the background of the newsletter section when it has the grid class */
+    .newsletter__bg.grid{
+        width: 1090px; /* Sets the width of the newsletter section to 1090px */
+    }
+
+    /* Styling for the title in the newsletter section */
+    .newsletter__title {
+        font-size: 80px; /* Sets the font size of the title */
+        margin-left: 50px; /* Adds a left margin to the title */
+    }
+
+    /* Styling for the description in the newsletter section */
+    .newsletter__description {
+       font-size: 48px; /* Sets the font size of the description */
+    }
+
+}
+
+    /* Media query for screens with a maximum width of 375px */
+    @media screen and (max-width: 375px) {
+        /* Styling for the header */
+        header {
+            width: 1080px; /* Sets the width of the header */
+        }
+
+        /* Styling for the logo container */
+        .logo-container{
+            width: 100px; /* Sets the width of the logo container */
+            height: auto; /* Sets the height of the logo container to auto */
+            padding-bottom: 10px; /* Adds padding to the bottom of the logo container */
+        }
+
+        /* Styling for the logo image */
+        .logo-image {
+            width: 50px; /* Sets the width of the logo image */
+            height: auto; /* Sets the height of the logo image to auto */
+        }
+
+        /* Styling for the image in the image container */
+        .image-container img {
+            width: 1100px; /* Sets the width of the image */
+            height: auto; /* Sets the height of the image to auto */
+        }
+
+        /* Styling for the text in the image container */
+        .image-text {
+            width: 200%; /* Sets the width of the text to 200% of the parent container */
+            margin-left: 50px; /* Adds a left margin to the text */
+            margin-top: 200px; /* Adds a top margin to the text */
+        }
+
+        /* Styling for the product grid */
+        .product-grid {
+            display: grid; /* Sets the display type to grid */
+            grid-template-columns: repeat(1, 1fr); /* Sets the grid to have one column that takes up the full width of the grid container */
+            grid-gap: 300px; /* Sets the gap between grid items */
+            margin-left:200px; /* Adds a left margin to the grid */
+        }
+
+        /* Styling for the image in the product */
+        .product img {
+            width: auto; /* Sets the width of the image to auto */
+            height: 500px; /* Sets the height of the image */
+        }
+
+        /* Styling for the about section */
+        #about {
+            width: 1090px; /* Sets the width of the about section */
+        }
+
+        /* Styling for the heading in the products section */
+        .products-section h2 {
+            font-size: 80px; /* Sets the font size of the heading */
+            margin-left: 50px; /* Adds a left margin to the heading */
+            font-family: 'Urbanist', sans-serif; /* Sets the font family of the heading */
+        }
+
+        /* Styling for the heading in the about section */
+        #about h2 {
+            font-size: 80px; /* Sets the font size of the heading */
+        }
+        
+        /* Styling for the paragraph in the about section */
+        #about p {
+            font-size: 48px; /* Sets the font size of the paragraph */
+        }
+        
+        /* Styling for the background of the newsletter section */
+        .newsletter__bg {
+            flex-direction: column; /* Sets the direction of the flex items to column */
+        }
+
+        /* Styling for the subscribe section in the newsletter */
+        .newsletter__subscribe {
+            flex-direction: column; /* Sets the direction of the flex items to column */
+            align-items: stretch; /* Stretches the flex items to fill the container */
+        }
+
+        /* Styling for the input field in the newsletter section */
+        .newsletter__input {
+            margin-right: 0; /* Removes the right margin from the input field */
+            width: 100%; /* Sets the width of the input field to 100% of the parent container */
+        }
+
+        /* Styling for the button */
+        .button {
+            width: 100%; /* Sets the width of the button to 100% of the parent container */
+            margin-top: 20px; /* Adds a top margin to the button */
+        }
+
+        /* Styling for the background of the newsletter section when it has the grid class */
+        .newsletter__bg.grid{
+            width: 1090px; /* Sets the width of the newsletter section to 1090px */
+        }
+
+        /* Styling for the title in the newsletter section */
+        .newsletter__title {
+            font-size: 80px; /* Sets the font size of the title */
+            margin-left: 50px; /* Adds a left margin to the title */
+        }
+        
+        /* Styling for the description in the newsletter section */
+        .newsletter__description {
+           font-size: 48px; /* Sets the font size of the description */
+        }
+    }
+
+    /* Media query for screens with a maximum width of 411px */
+    @media screen and (max-width: 411px) {
+        /* Styling for the header */
+        header {
+            width: 1080px; /* Sets the width of the header */
+        }
+
+        /* Styling for the logo container */
+        .logo-container{
+            width: 100px; /* Sets the width of the logo container */
+            height: auto; /* Sets the height of the logo container to auto */
+            padding-bottom: 10px; /* Adds padding to the bottom of the logo container */
+        }
+
+        /* Styling for the logo image */
+        .logo-image {
+            width: 50px; /* Sets the width of the logo image */
+            height: auto; /* Sets the height of the logo image to auto */
+        }
+
+        /* Styling for the image in the image container */
+        .image-container img {
+            width: 1100px; /* Sets the width of the image */
+            height: auto; /* Sets the height of the image to auto */
+        }
+
+        /* Styling for the text in the image container */
+        .image-text {
+            width: 200%; /* Sets the width of the text to 200% of the parent container */
+            margin-left: 50px; /* Adds a left margin to the text */
+            margin-top: 200px; /* Adds a top margin to the text */
+        }
+
+        /* Styling for the product grid */
+        .product-grid {
+            display: grid; /* Sets the display type to grid */
+            grid-template-columns: repeat(1, 1fr); /* Sets the grid to have one column that takes up the full width of the grid container */
+            grid-gap: 300px; /* Sets the gap between grid items */
+            margin-left:200px; /* Adds a left margin to the grid */
+        }
+
+        /* Styling for the image in the product */
+        .product img {
+            width: auto; /* Sets the width of the image to auto */
+            height: 500px; /* Sets the height of the image */
+        }
+        /* Styling for the about section */
+        #about {
+            width: 1090px; /* Sets the width of the about section */
+        }
+
+        /* Styling for the heading in the products section */
+        .products-section h2 {
+            font-size: 80px; /* Sets the font size of the heading */
+            margin-left: 50px; /* Adds a left margin to the heading */
+            font-family: 'Urbanist', sans-serif; /* Sets the font family of the heading */
+        }
+
+        /* Styling for the heading in the about section */
+        #about h2 {
+            font-size: 80px; /* Sets the font size of the heading */
+        }
+        
+        /* Styling for the paragraph in the about section */
+        #about p {
+            font-size: 48px; /* Sets the font size of the paragraph */
+        }
+        
+        /* Styling for the background of the newsletter section */
+        .newsletter__bg {
+            flex-direction: column; /* Sets the direction of the flex items to column */
+        }
+
+        /* Styling for the subscribe section in the newsletter */
+        .newsletter__subscribe {
+            flex-direction: column; /* Sets the direction of the flex items to column */
+            align-items: stretch; /* Stretches the flex items to fill the container */
+        }
+
+        /* Styling for the input field in the newsletter section */
+        .newsletter__input {
+            margin-right: 0; /* Removes the right margin from the input field */
+            width: 100%; /* Sets the width of the input field to 100% of the parent container */
+        }
+
+        /* Styling for the button */
+        .button {
+            width: 100%; /* Sets the width of the button to 100% of the parent container */
+            margin-top: 20px; /* Adds a top margin to the button */
+        }
+
+        /* Styling for the background of the newsletter section when it has the grid class */
+        .newsletter__bg.grid{
+            width: 1090px; /* Sets the width of the newsletter section to 1090px */
+        }
+
+        /* Styling for the title in the newsletter section */
+        .newsletter__title {
+            font-size: 80px; /* Sets the font size of the title */
+            margin-left: 50px; /* Adds a left margin to the title */
+        }
+        
+        /* Styling for the description in the newsletter section */
+        .newsletter__description {
+           font-size: 48px; /* Sets the font size of the description */
+        }
+    }
+
+    /* Media query for screens with a minimum width of 411px and a maximum width of 769px */
+    @media screen and (min-width: 411px) and (max-width: 769px) {
+        /* Styling for the logo container */
+        .logo-container {
+            height: auto; /* Sets the height of the logo container to auto */
+            padding-bottom: 10px; /* Adds padding to the bottom of the logo container */
+        }
+
+        /* Styling for the header */
+        header{
+            width: 1080px; /* Sets the width of the header */
+        }
+
+        /* Styling for the image in the image container */
+        .image-container img {
+            width: 1080px; /* Sets the width of the image */
+            height: auto; /* Sets the height of the image to auto */
+        }
+
+        /* Styling for the text in the image container */
+        .image-text {
+            margin-left: 50px; /* Adds a left margin to the text */
+            margin-top: 100px; /* Adds a top margin to the text */
+            width: 80%; /* Sets the width of the text to 80% of the parent container */
+        }
+
+        /* Styling for the product grid */
+        .product-grid {
+            display: grid; /* Sets the display type to grid */
+            grid-template-columns: repeat(2, 1fr); /* Sets the grid to have two columns that each take up half of the grid container */
+            grid-gap: 200px; /* Sets the gap between grid items */
+            margin-left: 100px; /* Adds a left margin to the grid */
+        }
+
+        /* Styling for the image in the product */
+        .product img {
+            width: auto; /* Sets the width of the image to auto */
+            height: 300px; /* Sets the height of the image */
+        }
+
+        /* Styling for the heading in the products section */
+        .products-section h2 {
+            font-size: 80px; /* Sets the font size of the heading */
+            margin-left: 50px; /* Adds a left margin to the heading */
+            font-family: 'Urbanist', sans-serif; /* Sets the font family of the heading */
+        }
+
+        /* Styling for the about section */
+        #about {
+            width: 1090px; /* Sets the width of the about section */
+        }
+
+        /* Styling for the heading in the about section */
+        #about h2 {
+            font-size: 80px; /* Sets the font size of the heading */
+        }
+        
+        /* Styling for the paragraph in the about section */
+        #about p {
+            font-size: 48px; /* Sets the font size of the paragraph */
+        }
+
+        /* Styling for the background and subscribe section of the newsletter */
+        .newsletter__bg,
+        .newsletter__subscribe {
+            flex-direction: column; /* Sets the direction of the flex items to column */
+        }
+
+        /* Styling for the input field in the newsletter section */
+        .newsletter__input {
+            margin-right: 0; /* Removes the right margin from the input field */
+            width: 100%; /* Sets the width of the input field to 100% of the parent container */
+        }
+
+        /* Styling for the button */
+        .button {
+            width: 100%; /* Sets the width of the button to 100% of the parent container */
+            margin-top: 20px; /* Adds a top margin to the button */
+        }
+
+        /* Styling for the background of the newsletter section when it has the grid class */
+        .newsletter__bg.grid{
+            width: 1090px; /* Sets the width of the newsletter section to 1090px */
+        }
+
+        /* Styling for the title in the newsletter section */
+        .newsletter__title {
+            font-size: 80px; /* Sets the font size of the title */
+            margin-left: 50px; /* Adds a left margin to the title */
+        }
+        
+        /* Styling for the description in the newsletter section */
+        .newsletter__description {
+           font-size: 48px; /* Sets the font size of the description */
+        }
+    }
+
+    /* Media query for screens with a minimum width of 768px and a maximum width of 1024px */
+    @media screen and (min-width:768px) and (max-width: 1024px) {
+        /* Styling for the body */
+        body {
+            font-family: 'Anonymous Pro', monospace; /* Sets the font family of the body */
+            width: 100%; /* Sets the width of the body to 100% of the viewport */
+            height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+            margin: 0; /* Removes the margin from the body */
+            padding: 0; /* Removes the padding from the body */
+        }
+        
+    /* Styling for the header */
+    header {
+        text-align: center; /* Centers the text in the header */
+        background-color: white; /* Sets the background color of the header to white */
+        height: 40px; /* Sets the height of the header */
+        margin: 0; /* Removes the margin from the header */
+        top: 0; /* Positions the header at the top of the page */
+        width: 100%; /* Sets the width of the header to 100% of the parent container */
+        z-index: 1; /* Sets the stack order of the header. A higher z-index means the element will be closer to the front */
+    }
+    
+    /* Styling for the image in the image container */
+    .image-container img {
+        width: 1080px; /* Sets the width of the image */
+        height: auto; /* Sets the height of the image to auto */
+        margin: auto; /* Centers the image */
+        border-bottom: 2px solid black; /* Adds a bottom border to the image */
+    }
+    
+    /* Styling for the text in the image container */
+    .image-text {
+        position: absolute; /* Positions the text absolutely within the nearest positioned ancestor */
+        top: 20%; /* Positions the text 30% from the top of the nearest positioned ancestor */
+        margin-left: 50px; /* Adds a left margin to the text */
+        text-align: left; /* Aligns the text to the left */
+        font-size: 52px; /* Sets the font size of the text */
+        width: 45%; /* Sets the width of the text to 45% of the parent container */
+        font-family: 'Urbanist', sans-serif; /* Sets the font family of the text */
+        color: white; /* Sets the color of the text to white */
+    }
+    
+    /* Styling for the logo container */
+    .logo-container {
+        float: left; /* Floats the logo container to the left */
+    }
+    
+    /* Styling for the logo image */
+    .logo-image {
+        width: 40px; /* Sets the width of the logo image */
+        height: auto; /* Sets the height of the logo image to auto */
+        margin-left: 20px; /* Adds a left margin to the logo image */
+    }
+    
+    /* Styling for the cart button container */
+    .cart-button-container {
+        float: right; /* Floats the cart button container to the right */
+        margin-right: 10px; /* Adds a right margin to the cart button container */
+        margin-bottom: 10px; /* Adds a bottom margin to the cart button container */
+    }
+    
+    /* Styling for the cart button */
+    .cart-button {
+        background: none; /* Removes the background from the cart button */
+        border: none; /* Removes the border from the cart button */
+        cursor: pointer; /* Changes the cursor to a pointer when hovering over the cart button */
+    }
+    
+    /* Styling for the image in the cart button */
+    .cart-button img {
+        width: 30px; /* Sets the width of the image */
+        height: auto; /* Sets the height of the image to auto */
+    }
+    
+    /* Styling for the list in the navigation */
+    nav ul {
+        list-style-type: none; /* Removes the list style from the list */
+        padding: 0; /* Removes the padding from the list */
+        display: flex; /* Sets the display type to flex */
+        justify-content: space-around; /* Distributes the space around the list items evenly */
+        padding-top: 10px; /* Adds padding to the top of the list */
+    }
+    
+    /* Styling for the links in the list items in the navigation */
+    nav ul li a {
+        font-family: 'Urbanist', sans-serif; /* Sets the font family of the links */
+        color: #000; /* Sets the color of the links to black */
+        text-decoration: none; /* Removes the text decoration from the links */
+        font-size: 18px; /* Sets the font size of the links */
+    }
+    
+    /* Styling for the product container */
+    .product {
+        align-items: center; /* Centers the child elements vertically */
+        width: 300px; /* Sets the width of the product container */
+        overflow: visible; /* Content can be displayed outside the product container's box */
+        margin-left: 20px; /* Adds a left margin to the product container */
+    }
+    
+    /* Styling for the image in the product container */
+    .product img {
+        width: auto; /* Sets the width of the image to auto */
+        height: 300px; /* Sets the height of the image */
+    }
+    
+    /* Styling for the paragraph in the product container */
+    .product p {
+        margin: 10px 0; /* Adds a top and bottom margin to the paragraph */
+        font-size: 18px; /* Sets the font size of the paragraph */
+    }
+    
+    /* Styling for the product grid */
+    .product-grid {
+        display: grid; /* Sets the display type to grid */
+        grid-template-columns: repeat(3, 1fr); /* Sets the grid to have three columns that each take up a third of the grid container */
+        grid-gap: 20px; /* Sets the gap between grid items */
+        margin-left: 30px; /* Adds a left margin to the grid */
+    }
+    
+    /* Styling for the heading in the products section */
+    .products-section h2 {
+        font-size: 42px; /* Sets the font size of the heading */
+        margin-left: 50px; /* Adds a left margin to the heading */
+        font-family: 'Urbanist', sans-serif; /* Sets the font family of the heading */
+    }
+    
+    /* Styling for the add to cart button */
+    .add-to-cart {
+        background-color: black; /* Sets the background color of the button to black */
+        border: none; /* Removes the border from the button */
+        color: white; /* Sets the color of the button text to white */
+        padding: 15px 32px; /* Adds padding to the button */
+        text-align: center; /* Centers the text in the button */
+        text-decoration: none; /* Removes the text decoration from the button */
+        display: inline-block; /* Sets the display type to inline-block */
+        cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    }
+    
+    /* Styling for the about section */
+    #about {
+        width: 100%; /* Sets the width of the about section to 100% of the parent container */
+    }
+    
+    /* Styling for the heading in the about section */
+    #about h2 {
+        font-size: 42px; /* Sets the font size of the heading */
+        font-family: 'Urbanist', sans-serif; /* Sets the font family of the heading */
+        margin-left: 50px; /* Adds a left margin to the heading */
+    }
+    
+    /* Styling for the paragraph in the about section */
+    #about p {
+        font-size: 1em; /* Sets the font size of the paragraph to 1em */
+        line-height: 1.6; /* Sets the line height of the paragraph */
+        font-family: 'Urbanist', sans-serif; /* Sets the font family of the paragraph */
+        margin: 0; /* Removes the margin from the paragraph */
+        margin-left: 50px; /* Adds a left margin to the paragraph */
+    }
+    
+    /* Styling for the title in the newsletter section */
+    .newsletter__title {
+        font-size: 42px; /* Sets the font size of the title */
+        color: hsl(0, 0%, 15%); /* Sets the color of the title using the HSL color model */
+        margin-bottom: var(--mb-1-5); /* Sets the bottom margin of the title to the value of the --mb-1-5 CSS variable */
+        font-family: 'Urbanist', sans-serif; /* Sets the font family of the title */
+    }
+    
+    /* Styling for the description in the newsletter section */
+    .newsletter__description {
+        color: hsl(0, 0%, 35%); /* Sets the color of the description using the HSL color model */
+    }
+    /* Styling for the subscribe section in the newsletter */
+    .newsletter__subscribe {
+        display: flex; /* Sets the display type to flex */
+        flex-direction: column; /* Sets the direction of the flex items to column */
+        row-gap: .75rem; /* Sets the gap between rows in the flex container */
+    }
+    
+    /* Styling for the input field in the newsletter section */
+    .newsletter__input {
+        border: none; /* Removes the border from the input field */
+        outline: none; /* Removes the outline from the input field */
+        background-color: hsl(0, 0%, 94%); /* Sets the background color of the input field using the HSL color model */
+        padding: 1.25rem 1rem; /* Adds padding to the input field */
+        color: hsl(0, 0%, 15%); /* Sets the color of the input field text using the HSL color model */
+    }
+    
+    /* Styling for the newsletter section */
+    .newsletter {
+        width: 100%; /* Sets the width of the newsletter section to 100% of the parent container */
+    }
+    
+    /* Styling for the background in the newsletter section */
+    .newsletter__bg {
+        display: flex; /* Sets the display type to flex */
+        justify-content: space-between; /* Distributes the space between the flex items evenly */
+        align-items: center; /* Centers the flex items vertically */
+    }
+    
+    /* Styling for the title in the newsletter section */
+    .newsletter__title {
+        font-size: 42px; /* Sets the font size of the title */
+        margin-bottom: 30px; /* Adds a bottom margin to the title */
+        margin-left: 50px; /* Adds a left margin to the title */
+    }
+    
+    /* Styling for the description in the newsletter section */
+    .newsletter__description {
+        margin-bottom: 20px; /* Adds a bottom margin to the description */
+        margin-left: 50px; /* Adds a left margin to the description */
+        width: 70%; /* Sets the width of the description to 70% of the parent container */
+        font-family: 'Urbanist', sans-serif; /* Sets the font family of the description */
+    }
+    
+    /* Styling for the subscribe section in the newsletter */
+    .newsletter__subscribe {
+        display: flex; /* Sets the display type to flex */
+    }
+    
+    /* Styling for the input field in the newsletter section */
+    .newsletter__input {
+        flex-grow: 1; /* Allows the input field to take up the remaining space in the flex container */
+        margin-right: 10px; /* Adds a right margin to the input field */
+        width: 500px; /* Sets the width of the input field */
+        margin-right: 20px; /* Adds a right margin to the input field */
+    }
+    
+    /* Styling for the button */
+    .button {
+        background-color: #4c65af; /* Sets the background color of the button */
+        color: #f9f9f9; /* Sets the color of the button text */
+        padding: 10px 20px; /* Adds padding to the button */
+        border: none; /* Removes the border from the button */
+        cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    }
+    
+    /* Styling for the button when hovered over */
+    .button:hover {
+        background-color: #4c65af; /* Sets the background color of the button when hovered over */
+    }
+    }
